@@ -1,0 +1,100 @@
+{
+      "categorias": [
+            {
+                  "key": 1,
+                  "nome": "frontEnd",
+                  "cor": "#6BD1FF",
+                  "descricao": "Formação Front-End da Alura",
+                  "cards": [
+                              {
+                                    "titulo": "O que é React JS?",
+                                    "link": "https://youtu.be/6IuQUgeDPg0",
+                                    "imagem": "../../img/Imagens/oqeReactHook_frontend.png",
+                                    "key": 1
+                              },
+                              {
+                                    "titulo": "Aprenda React Hook neste tutorial",
+                                    "link": "https://youtu.be/KdQa4Rd6K1A",
+                                    "imagem": "../../img/Imagens/aprendaReactHook_frontend.png",
+                                    "key": 2
+                              },
+                              {
+                                    "titulo": "Guia de carreira React JS",
+                                    "link": "https://youtu.be/0tS4lUq_7iA",
+                                    "imagem": "../../img/Imagens/guiaDeCarreira_frontend.jpg",
+                                    "key": 3
+                              },
+                              {
+                                    "titulo": "Como deixar o Layout Responsivo no seu site",
+                                    "link": "https://youtu.be/kyFiT4ofMwk",
+                                    "imagem": "../../img/Imagens/layoutResponsivo_frontend.jpg",
+                                    "key": 4
+                              }
+                        ]
+            },
+            {
+                  "key": 2,
+                  "nome": "data-science",
+                  "cor": "#69953B",
+                  "descricao": "Formação Data Science na Alura",
+                  "cards": [
+                        {
+                              "titulo": "Será que a inteligência artificial será tão poderosa quanto os seres humanos?",
+                              "link": "https://youtu.be/Kk3vBRqKA2o",
+                              "imagem": "../../img/Imagens/intArtificial_datascience.jpg",
+                              "key": 1
+                        },
+                        {
+                              "titulo": "O que é Data Science?",
+                              "link": "https://youtu.be/5b9Z8toVaAU",
+                              "imagem": "../../img/Imagens/intArtificial_datascience.jpg",
+                              "key": 2
+                        },
+                        {
+                              "titulo": "3 aplicações de Machine Learning onde você nem imagina",
+                              "link": "https://youtu.be/qYhixp5qxTc",
+                              "imagem": "../../img/Imagens/machiLearning_datascience.jpg",
+                              "key": 3
+                        },
+                        {
+                              "titulo": "Aprenda tudo sobre Data Science, seus primeiros passos",
+                              "link": "https://youtu.be/IQdISZCosAE",
+                              "imagem": "../../img/Imagens/aprendaTudoDS_datascience.jpg",
+                              "key": 4
+                        }
+                  ]
+            },
+            {
+                  "key": 3,
+                  "nome": "mobile",
+                  "cor": "#FFBA05",
+                  "descricao": "Formação Mobile da Alura",
+                  "cards": [
+                        {
+                              "titulo": "Desenvolvimento iOS com Giovanna Moeller",
+                              "link": "https://youtu.be/4AH9H_dx_7g",
+                              "imagem": "../../img/Imagens/devIOS_mobile.jpg",
+                              "key": 1
+                        },
+                        {
+                              "titulo": "Temas e Cores no SwiftUI",
+                              "link": "https://youtu.be/uXA8jLSuPNA",
+                              "imagem": "../../img/Imagens/temasSwiftui_mobile.jpg",
+                              "key": 2
+                        },
+                        {
+                              "titulo": "De Views para Jetpack Compose",
+                              "link": "https://youtu.be/ly8e6WB0YQo",
+                              "imagem": "../../img/Imagens/jetpackCompose_mobile.jpg",
+                              "key": 3
+                        },
+                        {
+                              "titulo": "Desenvolvimento Android",
+                              "link": "https://youtu.be/fWscDFHKgw8",
+                              "imagem": "../../img/Imagens/desenAndroid_mobile",
+                              "key": 4
+                        }
+                  ]
+            }
+      ]
+}
