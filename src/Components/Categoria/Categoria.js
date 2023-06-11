@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import { grayLight } from '../UI/Variaveis';
 import Cards from '../Cards/Cards.js';
 
-const StyledCategoria = styled.section`
+
+const StyledCategoria = styled.div`
       width: 100%;
       height: 400px;
 `
 
-const CategoriaTitulo = styled.h2`
+export const CategoriaTitulo = styled.h2`
       background-color: ${props => props.cor};
       font-size: 32px;
       display: inline-block;
@@ -35,7 +36,7 @@ const CategoriaCards = styled.div`
       gap: 12px;
 `
 
-const Categoria = ({ nome, cor, descricao, cards }) => {
+const Categoria = ({ nome, cor, descricao, cardsLista }) => {
 
       return (
             <StyledCategoria>
@@ -47,17 +48,9 @@ const Categoria = ({ nome, cor, descricao, cards }) => {
 
                   <CategoriaCards>
                         {
-                              cards.map(item => {
-                                    item.cards.map(elemento => {
-                                          <Cards
-                                                key={elemento.key}
-                                                titulo={elemento.titulo}
-                                                link={elemento.link}
-                                                imagem={elemento.imagem} 
-                                          />
-                                    })
+                              cardsLista.map(objeto => {
+                                    return (<Cards key={objeto.key} titulo={objeto.titulo} link={objeto.link} imagem={objeto.imagem} cor={objeto.cor}/>);
                               })
-
                         }
                   </CategoriaCards>
 

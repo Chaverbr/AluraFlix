@@ -10,3 +10,7 @@ export const blackMedium = "#000000e6";
 export const dataScienceColor = "#69953B";
 
 export const mobileColor = "#FFBA05";
+
+export const primaryMedium = "#2A7AE4";
+
+export const blackLighter = "#9E9E9E";

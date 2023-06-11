@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import logoAlura from "../../img/Logos/logo_aluraflix.png";
-import { blackDark, grayLight } from '../UI/Variaveis';
+import { blackDark, grayLight, primaryMedium } from '../UI/Variaveis';
+import { Link } from "react-router-dom";
 
 const StyledCabecalho = styled.header`
       display: flex;
@@ -11,8 +12,9 @@ const StyledCabecalho = styled.header`
       height: 94px;
       background-color: ${blackDark};
       padding: 0px 24px;
+      border-bottom: 3px solid ${primaryMedium};
 `
-const LogoAluraFlix = styled.img`
+export const LogoAluraFlix = styled.img`
       width: 150px;
       height: 40px;
 `
@@ -32,11 +34,16 @@ const BlackButton = styled.button`
 const Cabecalho = () => {
       return (
             <StyledCabecalho>
-                  <LogoAluraFlix src={logoAlura} alt="Logo AluraFlix" />
 
-                  <BlackButton>
-                        Novo Vídeo
-                  </BlackButton>
+                  <Link to="/">
+                        <LogoAluraFlix src={logoAlura} alt="Logo AluraFlix" />
+                  </Link>
+
+                  <Link to="/novovideo">
+                        <BlackButton>
+                              Novo Vídeo
+                        </BlackButton>
+                  </Link>
 
             </StyledCabecalho>
       )

@@ -3,6 +3,8 @@ import styled from "styled-components";
 import imagemDeFundo from "../../img/Imagens/banner.png";
 import { grayLight, frontEndColor } from '../UI/Variaveis';
 
+import categorias from "../../Json/Categorias.json";
+
 const StyledBanner = styled.div`
       background-image: url(${imagemDeFundo});
       background-position: center center;
@@ -22,16 +24,16 @@ const FiltroEscuro = styled.div`
 `
 
 const BannerTextos = styled.div`
-      width: 38%;
+      width: 42%;
       height: 40%;
 `
 
 const BannerImagemApresentacao = styled.img`
-      width: 38%;
+      width: 34%;
       height: 40%;
 `
 
-const TextoCategoria = styled.h1`
+const TextoCategoriaDestaque = styled.h1`
       font-size: 60px;
       display: inline-block;
       color: ${grayLight};
@@ -55,11 +57,17 @@ const BannerSubtitulo = styled.h3`
 
 const Banner = () => {
 
+      const categoriaDestaqueNome = categorias.destaques.filter(objeto => {
+            if (objeto.destaque === true) {
+                  return objeto
+            }
+      })
+
       return (
             <StyledBanner>
                   <FiltroEscuro>
                         <BannerTextos>
-                              <TextoCategoria>Front-End</TextoCategoria>
+                              <TextoCategoriaDestaque>{categoriaDestaqueNome[0].nome}</TextoCategoriaDestaque>
 
                               <BannerTitulo>SEO com React</BannerTitulo>
 

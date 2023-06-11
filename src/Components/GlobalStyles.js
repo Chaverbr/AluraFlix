@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
             color: ${grayLight};
       }
 
-      main {
+      body {
             background-color: ${blackMedium};
       }
 `;
